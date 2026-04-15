@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f6f8fa;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  body {
+    padding: 5px;
+  }
+}
+.repos-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.repos-container .get-repos {
+  padding: 20px;
+  background-color: #eee;
+  display: flex;
+  border-radius: 8px 8px 0 0;
+}
+.repos-container .get-repos input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #d1d5da;
+  font-size: 20px;
+  outline: none;
+  flex: 1;
+  transition: border-color 0.3s;
+  border-radius: 8px;
+}
+.repos-container .get-repos input:focus {
+  border-color: #2ea44f;
+}
+.repos-container .get-repos .search-btn {
+  width: 110px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2ea44f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+  transition: background-colo 0.3s;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .repos-container .get-repos .search-btn {
+    width: 85px;
+  }
+}
+.repos-container .get-repos .search-btn:hover {
+  background-color: #2c974b;
+}
+.repos-container .show-data {
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 0 0 8px 8px;
+}
+.show-data div {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.show-data div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.show-data div p {
+  font-size: 20px;
+}
+.show-data div a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2c974b;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.show-data span {
+  font-size: 20px;
+}
